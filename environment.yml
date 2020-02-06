@@ -1,0 +1,14 @@
+name: Student_Project_Microeconometrics
+
+dependencies:
+- numpy
+- pandas
+- pandas 
+- jupyterlab
+- matplotlib
+- seaborn
+- scipy
+- pip:
+  - grmpy
+  - statsmodels
+  - pathlib
