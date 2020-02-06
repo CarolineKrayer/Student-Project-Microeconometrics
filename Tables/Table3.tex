@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{standalone}
+
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{caption}
+
+%Tabulator 
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\tabs[1][0.8cm]{\hspace*{#1}}
+\newcommand\tabu[1][0.4cm]{\hspace*{#1}}
+
+
+\begin{document}
+
+\begin{minipage}[c][11cm]{1.2 \textwidth}
+
+\thispagestyle{empty}
+
+\begin{table}
+\centering
+\caption*{\textbf{Table 3:} Estimation results of heterogeneity analysis with respect to income}
+
+\begin{threeparttable}
+\begin{tabular}{lccc}
+
+    \toprule
+    & \multicolumn{3}{c}{Second Stage} \\ 
+    \cmidrule(lr){2-4}
+    & Income $<$ p15 & Income $<$ p40 & Income $>$ p80 \\
+
+    \midrule
+ 
+    \input{table3_aux}  % The table fragment
+
+    \bottomrule
+\end{tabular}
+
+    \begin{tablenotes}
+    \item NOTES:
+	\par
+	\begingroup
+	\leftskip=0.3cm % Parameter anpassen
+	\noindent 
+	The dependent variable is 'Changes in Preferences for 		Redistribution'. The columns show the second stage 			estimation results for 2SLS regressions with the 			specified income dummy, respectively. Other variables 		used in the regression are omitted in this table.\\
+    Standard errors clustered on municipality level are 		shown in parentheses. \\
+    $ \ast $ \tab significant at the 10 percent level \\
+    $ \ast \ast $ \tabs significant at the 5 percent level 	\\
+    $ \ast \ast \ast $ \tabu significant at the 1 percent 		level.
+	\par
+	\endgroup
+
+
+
+
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{minipage}
+\end{document}

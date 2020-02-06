@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper]{standalone}
+
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{caption}
+
+%Tabulator 
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\tabs[1][0.8cm]{\hspace*{#1}}
+\newcommand\tabu[1][0.4cm]{\hspace*{#1}}
+
+
+\begin{document}
+
+\begin{minipage}[c][24cm]{1.3 \textwidth}
+
+\thispagestyle{empty}
+
+\begin{table}
+\centering
+\caption*{\textbf{Table 7:} 2SLS excluding big city counties}
+
+\begin{threeparttable}
+\begin{tabular}{lll}
+
+    \toprule
+
+    & First Stage & Second Stage  \\ 
+    \midrule
+ 
+    \input{table7_aux}  % The table fragment
+
+    \bottomrule
+\end{tabular}
+
+    \begin{tablenotes}
+    \item NOTES:
+    \input{table7_aux_notes}  % The note on sample size. 
+	\par
+	\begingroup
+	\leftskip=0.3cm % Parameter anpassen
+	\noindent 
+	The dependent variable in the first stage is 				'Change in share of immigrants', the dependent 				variable in the second stage is 'Changes in 				Preferences for Redistribution'. \\
+    Standard errors clustered on municipality level are 		shown in parentheses. \\
+    $ \ast $ \tab significant at the 10 percent level \\
+    $ \ast \ast $ \tabs significant at the 5 percent level 	\\
+    $ \ast \ast \ast $ \tabu significant at the 1 percent 		level.
+	\par
+	\endgroup
+
+
+
+
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{minipage}
+\end{document}

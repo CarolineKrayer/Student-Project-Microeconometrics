@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{standalone}
+
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{caption}
+
+%Tabulator 
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\tabs[1][0.8cm]{\hspace*{#1}}
+\newcommand\tabu[1][0.4cm]{\hspace*{#1}}
+
+
+\begin{document}
+
+\begin{minipage}[c][15cm]{1.8 \textwidth}
+
+\thispagestyle{empty}
+
+\begin{table}
+\centering
+\caption*{\textbf{Table 1:} Descriptive Statistics}
+
+\begin{threeparttable}
+ 
+    \input{table1_aux}  % The table fragment
+
+    \begin{tablenotes}
+    \item \textbf{Data Source}:
+    Ethnic Diversity and Preferences for Redistribution - 		Regression Data 
+    \item NOTES:
+    The variables 'Share of immigrants', 'Change in share of immigrants' and 'Refugee inflow' are measured in percentages of the municipal population. A municipality is denoted small-sized if it has less than 50 000 inhabitants, it is large-sized if it has more than 200 000 inhabitants.
+    
+	
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{minipage}
+\end{document}
