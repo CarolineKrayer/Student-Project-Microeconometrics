@@ -17,5 +17,5 @@ This student project replicates the main results of [Ethnic Diversity and Prefer
 
 The project focusses on the incorporation of the research issue into the potential outcome framework and provides a critical assessment of the identification strategy used by the authors. The replication of the original results includes graphical analyses of the data, treatment effect estimations as well as additional analyses to investigate threats to identification. The additional contribution consists of the discussion of further threats to validity of the treatment effect estimate as well as a simulation study that is performed to study those.
 
-[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-CarolineKrayer.svg?branch=master)](https://travis-ci.org/HumanCapitalAnalysis/student-project-CarolineKrayer) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](HumanCapitalAnalysis/student-project-template/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/student-project-CarolineKrayer.svg?branch=master)](https://travis-ci.org/HumanCapitalAnalysis/student-project-CarolineKrayer) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.txt)
 
